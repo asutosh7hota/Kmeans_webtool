@@ -6,8 +6,11 @@
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles.css')}}">
 	</head>
   <body>
-		<h1>Input Error:</h1>
-  	<p>{{error_msg}}</p>
+		<p>Node index for each cluster</p>
+  	{% for result_element in result %}
+      <p>{{result_element}} </p>
+      <p class=bottomln> </p>
+  	{% endfor %}
   	<form method="GET" action="/k-means">
   		<p><button type="submit">Back</button></p>
 		</form>

@@ -8,13 +8,21 @@
   <body>
 		<h1>Clustering Result</h1>
 		<p>There are {{ node_num }} nodes that are clustered into {{c_cnt}} cluters.</p>
+		<br>
 		<p>The number of nodes for each cluster:</p>
   	<p>{{c_node_num}}</p>
+  	<br>
   	<p>The location for each cluster center:</p>
   	{% for centers_element in centers %}
-      <p>{{ centers_element }} </p>
+      <p>{{centers_element}} </p>
   	{% endfor %}
-  	<form method="GET" action="/index">
+  	<br>
+  	<p>The node index for each cluster (maybe massive if the number of nodes is large):</p>
+  	<form method="GET" action="/more_result">
+  		<p><button type="submit">More results</button></p>
+		</form>
+		<br>
+  	<form method="GET" action="/k-means">
   		<p><button type="submit">Back</button></p>
 		</form>
   </body>

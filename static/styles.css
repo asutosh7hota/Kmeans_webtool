@@ -21,6 +21,11 @@ p{
 	font-size: 16px;
 }
 
+.bottomln{
+	width:50%;
+	border-bottom: 1px solid black;
+}
+
 .filebox{
 	padding-left: 5%;
 }
