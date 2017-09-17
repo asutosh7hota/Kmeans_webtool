@@ -9,7 +9,7 @@ This repository applies python-flask to generate KMeans clustering classifier.
 <br>3. Initialization method (method=0: random, method=1: KMeans++, method=2: KMeans||)
 <br>4. Number of runs
 
-# Output:
+## Output:
 <br>1. The number of nodes for each cluster
 <br>2. The coordinates for each cluster center
 
