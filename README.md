@@ -4,18 +4,17 @@
 This repository applies python-flask to generate KMeans clustering classifier. 
 
 ## Input:
-<br align="center">Node data (.csv)</br>
-<br align="center">Number of clusters (.csv)</br>
-<br align="center">Initialization method</br>
-<br align="center">Number of runs</br>
+<br>1. Node data (.csv)
+<br>2. Number of clusters
+<br>3. Initialization method (method=0: random, method=1: KMeans++, method=2: KMeans||)
+<br>4. Number of runs
 
 # Output:
-<br align="center">The number of nodes for each cluster</br>
-<br align="center">The coordinates for each cluster center</br>
+<br>1. The number of nodes for each cluster
+<br>2. The coordinates for each cluster center
 
 ## Implementation
-In order to implement locally, just try
-<br align="center">python app.py portnumber</br>
-You should see it on localhost:portnumber.
+<br>In order to implement locally, just try "python app.py portnumber"
+<br>You should see it on localhost:portnumber.
 
 ## Heroku
